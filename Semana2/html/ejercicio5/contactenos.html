@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8" />
+  <head>
+    <title>Grupo Nyaleon Contactanos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 1.4em;
+      }
+      section {
+        margin: 5.2vh 1.2vh;
+      }
+      header {
+        margin: 6vh 0.5vh;
+      }
+
+      section > article {
+        font-size: 0.9em;
+      }
+      section > article > h4 {
+        margin: 0px;
+      }
+
+      section > article > p + p {
+        color: grey;
+        font-size: 0.83em;
+      }
+
+      article {
+        margin: 1.2em;
+      }
+      img {
+        width: 40vh;
+        scroll-snap-align: start;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>GRUPO Nyaleon</h2>
+      <aside>
+        <a href="proyectos.html">Inicio</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="galeria.html">Galeria</a>
+      </aside>
+    </header>
+    <section>
+      <h2>Zona de Contacto</h2>
+      <form method="post" action="/">
+        <fieldset>
+          <legend>Informacion Personal</legend>
+          <div>
+            <label
+              >Nombre:
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Angel Cañas"
+                required
+              />
+            </label>
+          </div>
+          <label
+            >Email:
+            <input
+              type="email"
+              id="name"
+              name="name"
+              placeholder="angelcaas9@gmail.com"
+              required
+            />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Informacion Adicional</legend>
+          <label>
+            Telefono:
+            <input
+              type="tel"
+              id="email"
+              name="telefono"
+              placeholder=""
+              pattern="[0-9]{8}"
+              required
+            />
+          </label>
+
+          <div>
+            <datalist id="soluciones">
+              <option value="Procesos Internos/Backend"></option>
+              <option value="Pantallas Interactivas/Frontend"></option>
+              <option value="Pagina Web"></option>
+              <option value="Otro"></option>
+            </datalist>
+            <label>Tipo De solucion?</label>
+            <input type="text" list="soluciones" />
+          </div>
+        </fieldset>
+
+        <button aria-label="prueba">Enviar</button>
+      </form>
+    </section>
+
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <div class="contacto-info">
+        <div class="direccion">
+          <h3>Dirección</h3>
+          <p>123 Calle Ficticia, Ciudad, País</p>
+        </div>
+        <div class="telefonos">
+          <h3>Teléfonos</h3>
+          <ul>
+            <li><a href="tel:+1234567890">+1 (234) 567-890</a></li>
+            <li><a href="tel:+0987654321">+0 (987) 654-321</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section id="contacto">
+        <p>&copy; 2025 GRUPO Nyaleon. Todos los derechos reservados.</p>
+      </section>
+    </footer>
+  </body>
+</html>
